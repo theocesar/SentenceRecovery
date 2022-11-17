@@ -41,7 +41,6 @@ def corpus(link):
 
     textof = ' '.join(soup.stripped_strings)
 
-    textof = re.sub("[\n\t<p>]", "", textof)
     textof = re.split("[!?:;.]", textof)
 
     return textof
